@@ -1,0 +1,170 @@
+.poppins {
+    font-family: "Poppins", serif;
+    font-style: normal;
+  }
+
+/* shared styles */
+
+.display-flex{
+    display: flex;
+  }
+
+  .bold-24{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .semibold-28{
+    font-weight: 600;
+    font-size: 1.75rem;
+  }
+
+  /* text-colour-gray */
+
+  .light-gray{
+    color: #3A3A3A;
+  }
+
+  .btn-primary{
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    padding: 10px 24px;
+    border: none;
+    font-weight: bold;
+    margin-top: 16px;
+  }
+
+
+
+
+
+  /* this is navbar styles */
+
+.nav-section{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.Nav-icons{
+    gap: 34px;
+}
+
+.Nav-icons li{
+    list-style: none;
+    
+}
+
+.Nav-icons li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.navbar{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-icon{
+    padding: 0;
+    width: 35px;
+}
+
+.cart-icon{
+    width: 25px;
+}
+
+/* this is header section */
+
+.header-section{
+    margin: 50px auto;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.camera{
+    max-width: 100%;
+    margin-left: 133px;
+    padding-left: 250px;
+}
+
+
+.header{
+    max-width: 582px;
+}
+
+.header-title{
+    font-weight: bold;
+    font-size: 3.25rem;
+}
+
+/* Companies logos section */
+
+.companies-container{
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: (7 , 1fr);
+    margin: 100px auto;
+    border: 0.5px solid #3A3A3A;
+}
+
+.companies-box img{
+    margin: 30px;
+}
+
+
+
+
+/* reponsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .header-section, 
+    .navbar{
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        background-position: top;
+    }
+    .Nav-icons{
+        gap: 15px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .camera{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header{
+        margin-top: 70px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* responsive for medium device */
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .right-box{
+        background-position: right;
+        background-position-x: right;
+    }
+
+    .camera{
+        margin-left: 0;
+        margin-right: 500px;
+        margin-top: 90px;
+    }
+}
+
